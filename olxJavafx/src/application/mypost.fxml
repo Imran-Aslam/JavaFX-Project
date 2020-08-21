@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="645.0" prefWidth="1340.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.mypostController">
+   <children>
+      <AnchorPane layoutX="7.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="586.0" prefWidth="1327.0" style="-fx-border-color: yellow; -fx-border-width: 5;">
+         <children>
+            <Label layoutX="355.0" layoutY="17.0" prefHeight="72.0" prefWidth="279.0" text="My Posts">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="98.0" layoutX="246.0" layoutY="28.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../../imran/Olx%20project/Images/NextArrow.png" />
+               </image>
+            </ImageView>
+            <TableView fx:id="table" layoutX="265.0" layoutY="104.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="477.0" prefWidth="972.0" stylesheets="@application.css">
+               <columns>
+                  <TableColumn fx:id="col_id" prefWidth="159.0" resizable="false" text="ID" />
+                  <TableColumn fx:id="col_price" prefWidth="274.0" resizable="false" text="Price" />
+                  <TableColumn fx:id="col_name" prefWidth="254.0" resizable="false" text="Name" />
+                  <TableColumn fx:id="col_image" prefWidth="284.0" resizable="false" style="-fx-alignment: center;" text="Image" />
+               </columns>
+               <contextMenu>
+                  <ContextMenu>
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#open" text="Open" />
+                        <MenuItem mnemonicParsing="false" onAction="#delete" text="Delete" />
+                    </items>
+                  </ContextMenu>
+               </contextMenu>
+            </TableView>
+            <AnchorPane layoutX="47.0" layoutY="8.0" prefHeight="579.0" prefWidth="173.0" style="-fx-background-color: #708090;" />
+            <Button layoutX="1139.0" layoutY="28.0" mnemonicParsing="false" onAction="#back" prefHeight="51.0" prefWidth="98.0" text="Back" textFill="#722e2e">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

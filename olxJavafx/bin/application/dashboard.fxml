@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="585.0" prefWidth="1325.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.dashboardController">
+   <left>
+      <Pane prefHeight="574.0" prefWidth="252.0" style="-fx-background-color: #808080;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="49.0" layoutX="189.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imran/Olx%20project/Images/category-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="MULTIPLY" fitHeight="110.0" fitWidth="112.0" layoutX="62.0" layoutY="59.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" style="-fx-image: 20;">
+               <image>
+                  <Image url="@../../../../imran/Olx%20project/Images/user.jpg" />
+               </image>
+            </ImageView>
+            <Circle blendMode="MULTIPLY" fill="#cacfd3" layoutX="118.0" layoutY="114.0" radius="51.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="name" alignment="CENTER" layoutX="7.0" layoutY="169.0" prefHeight="51.0" prefWidth="238.0" text="Name" textFill="#e8e0e0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="65.0" layoutY="238.0" mnemonicParsing="false" onAction="#accountinfo" style="-fx-background-color: #cd5c5c; -fx-text-fill: white; -fx-background-radius: 20;" text="My Account">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="49.0" layoutY="293.0" mnemonicParsing="false" onAction="#editinfo" style="-fx-background-color: #cd5c5c; -fx-text-fill: white; -fx-background-radius: 20;" text="Edit Information">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="67.0" layoutY="344.0" mnemonicParsing="false" onAction="#addpost" style="-fx-background-color: #cd5c5c; -fx-text-fill: white; -fx-background-radius: 20;" text="Add Post">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="70.0" layoutY="399.0" mnemonicParsing="false" onAction="#mypost" style="-fx-background-color: #cd5c5c; -fx-text-fill: white; -fx-background-radius: 20;" text="My Post">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="72.0" layoutY="459.0" mnemonicParsing="false" onAction="#signout" style="-fx-background-color: #cd5c5c; -fx-text-fill: white; -fx-background-radius: 20;" text="Signout">
+               <font>
+                  <Font name="Times New Roman Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="682.0" prefWidth="972.0" style="-fx-background-color: #b0c4de;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="102.0" layoutY="14.0" prefHeight="265.0" prefWidth="357.0" style="-fx-border-color: #20b2aa; -fx-border-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="207.0" prefHeight="58.0" prefWidth="339.0" style="-fx-text-fill: white;" text="My Account">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="204.0" fitWidth="304.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/file-person-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="614.0" layoutY="14.0" prefHeight="265.0" prefWidth="357.0" style="-fx-border-color: #20b2aa; -fx-border-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="207.0" prefHeight="58.0" prefWidth="339.0" style="-fx-text-fill: white;" text="Edit Information">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="195.0" fitWidth="303.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/editIcon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="102.0" layoutY="308.0" prefHeight="267.0" prefWidth="357.0" style="-fx-border-color: #20b2aa; -fx-border-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="209.0" prefHeight="58.0" prefWidth="339.0" style="-fx-text-fill: white;" text="My Post">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="191.0" fitWidth="302.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/folder-document-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="614.0" layoutY="308.0" prefHeight="267.0" prefWidth="357.0" style="-fx-border-color: #20b2aa; -fx-border-radius: 20;">
+               <children>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="209.0" prefHeight="58.0" prefWidth="339.0" style="-fx-text-fill: white;" text="Add Post">
+                     <font>
+                        <Font name="Times New Roman Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="188.0" fitWidth="302.0" layoutX="29.0" layoutY="14.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/Add-Cart-icon.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>

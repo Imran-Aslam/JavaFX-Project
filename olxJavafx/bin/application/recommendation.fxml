@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="496.0" prefWidth="1346.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.recommendationController">
+   <children>
+      <TableView fx:id="table" editable="true" layoutX="3.0" layoutY="93.0" onMouseClicked="#selectedItem" prefHeight="380.0" prefWidth="1325.0" stylesheets="@application.css">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="288.0" resizable="false" text="ID" />
+            <TableColumn fx:id="col_price" prefWidth="278.0" resizable="false" text="Price" />
+            <TableColumn fx:id="col_name" minWidth="0.0" prefWidth="338.0" resizable="false" text="Name" />
+            <TableColumn fx:id="col_image" prefWidth="388.0" resizable="false" style="-fx-alignment: center;" text="Image" />
+         </columns>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+      <Label layoutX="14.0" layoutY="22.0" prefHeight="76.0" prefWidth="411.0" style="-fx-text-fill: brown;" text="Fresh Recommendation">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

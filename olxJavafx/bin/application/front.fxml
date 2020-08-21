@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="974.0" prefWidth="1338.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllerClass">
+   <bottom>
+      <Pane prefHeight="73.0" prefWidth="1262.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="360.0" layoutY="14.0" prefHeight="55.0" prefWidth="699.0" text="Copyright @ Online Exchange Created By Muhammad Imran Aslam and Abdul Wahab Nawaz" />
+         </children>
+      </Pane>
+   </bottom>
+   <top>
+      <BorderPane fx:id="borderpane2" prefHeight="277.0" prefWidth="1262.0" BorderPane.alignment="CENTER">
+         <top>
+            <Pane prefHeight="86.0" prefWidth="1262.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" layoutX="14.0" layoutY="8.0" prefHeight="86.0" prefWidth="163.0" text="Olx" textFill="#36512bde" textOverrun="CLIP">
+                     <font>
+                        <Font name="Georgia Bold" size="75.0" />
+                     </font>
+                  </Label>
+                  <TextField cache="true" layoutX="252.0" layoutY="24.0" prefHeight="43.0" prefWidth="456.0" promptText="Search" style="-fx-background-radius: 20;">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </opaqueInsets></TextField>
+                  <ImageView fitHeight="41.0" fitWidth="47.0" layoutX="664.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/icons8-search-512.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="login" layoutX="882.0" layoutY="19.0" mnemonicParsing="false" onAction="#login" prefHeight="47.0" prefWidth="176.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="signup" layoutX="1090.0" layoutY="19.0" mnemonicParsing="false" onAction="#signup" prefHeight="47.0" prefWidth="159.0" text="Signup">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <MenuBar minWidth="-Infinity" prefHeight="44.0" prefWidth="1328.0" BorderPane.alignment="TOP_LEFT">
+              <menus>
+                <Menu fx:id="home" mnemonicParsing="false" text="Home">
+                     <graphic>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#menu" prefHeight="20.0" prefWidth="20.0" />
+                     </graphic></Menu>
+                <Menu mnemonicParsing="false" text="All Categories">
+                  <items>
+                        <Menu mnemonicParsing="false" text="Mobiles">
+                           <items>
+                              <MenuItem fx:id="mobiles" mnemonicParsing="false" onAction="#category" text="Mobiles Phones">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/PhoneIcon.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="tablets" mnemonicParsing="false" onAction="#category" text="Tablets">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Tablets.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Electronics and Home Appliances">
+                          <items>
+                            <MenuItem fx:id="laptops" mnemonicParsing="false" onAction="#category" text="Laptops">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Laptos.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="tv_audio" mnemonicParsing="false" onAction="#category" text="TV-Audio-Video">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/TV.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <SeparatorMenuItem mnemonicParsing="false" />
+                              <MenuItem fx:id="generator" mnemonicParsing="false" onAction="#category" text="Generator">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Generator.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="acCoolers" mnemonicParsing="false" onAction="#category" text="AC and Coolers">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/AC.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Vehicles">
+                          <items>
+                            <MenuItem fx:id="bikes" mnemonicParsing="false" onAction="#category" text="Bikes">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Bikes.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="cars" mnemonicParsing="false" onAction="#category" text="Cars">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Cars.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Property For Sale">
+                           <items>
+                              <MenuItem fx:id="houses" mnemonicParsing="false" onAction="#category" text="Houses">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Houses.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="plots" mnemonicParsing="false" onAction="#category" text="Plots and Lands">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Plots.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                              <MenuItem fx:id="flats" mnemonicParsing="false" onAction="#category" text="Flats and Apartments">
+                                 <graphic>
+                                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../../../imran/Olx%20project/Images/Flats.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic></MenuItem>
+                           </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                <Menu fx:id="mobile" mnemonicParsing="false" text="Mobiles">
+                     <graphic>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#menu2" prefHeight="20.0" prefWidth="20.0" />
+                     </graphic></Menu>
+                  <Menu fx:id="car" mnemonicParsing="false" text="Cars">
+                     <graphic>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#menu3" prefHeight="20.0" prefWidth="20.0" />
+                     </graphic></Menu>
+                  <Menu fx:id="house" mnemonicParsing="false" text="Houses">
+                     <graphic>
+                        <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#menu4" prefHeight="20.0" prefWidth="20.0" />
+                     </graphic></Menu>
+              </menus>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <padding>
+                  <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+               </padding>
+               <effect>
+                  <ColorAdjust brightness="-0.03" contrast="0.02" hue="0.1" />
+               </effect>
+            </MenuBar>
+         </center>
+         <bottom>
+            <Label fx:id="labelImage" prefHeight="220.0" prefWidth="1263.0" style="-fx-background-radius: 30;" BorderPane.alignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="280.0" fitWidth="1262.0" pickOnBounds="true" style="-fx-effect: dropshadow(two-pass-box, rgb(10,101,107),15,0,0.1,3);">
+                     <image>
+                        <Image url="@../../../../imran/Olx%20project/Images/olxTagline.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </bottom>
+      </BorderPane>
+   </top>
+   <padding>
+      <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+   </padding>
+</BorderPane>
